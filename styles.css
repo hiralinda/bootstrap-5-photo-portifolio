@@ -1,32 +1,42 @@
 body {
-    background-color: gray; /* galery and contact me background*/
-    color: #ffffff; /* galery and contact me text*/
+    background-color: #6c757d; /* galery and contact me background*/
+    color: #dee2e6; /* galery and contact me text*/
 }
 
 .navbar {
-    background-color: black;
-    color:#ffffff
+    background-color: #495057;
+    color:#dee2e6;
 }
 
 .navbar-brand {
     font-weight: bold;
-    color: #ffffff;
+    color: #dee2e6;
 }
 
 .navbar .navbar-toggler {
-    background-color: white; /* Change to the desired color */
-    border-color: white; /* Change to the desired color */
+    background-color: #495057; /* Change to the desired color */
+    border-color: #495057; /* Change to the desired color */
 }
 
 .navbar-nav .nav-link {
     font-weight: bold;
-    color: white; 
+    color: #dee2e6; 
 }
 
 .navbar-brand:hover {
     cursor: pointer;
-    color: white; 
+    color: #dee2e6; 
 }
+
+.handlee-regular {
+    font-family: "Handlee", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 48px;
+    color: #212529;
+
+    
+  }  
 
 .main-pic {
     background-image: url('/img/DSC_2248.jpg'); /* Placeholder image */
@@ -93,23 +103,113 @@ body {
     border-radius: 5px;
   }
 
-/* About Section */
-.about-section {
-    background-color: #121212;
-    padding: 50px 0;
+  /* Style the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+  .about-section {
+    background-color: #495057; /* Light gray background */
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center; /* Center-align the content */
+}
+
+.about-section .container {
+    max-width: 800px; /* Set maximum width for content */
+    margin: 0 auto; /* Center the container */
+}
+
+.about-section h2 {
+    font-size: 36px; /* Adjust heading font size */
+    color: #dee2e6; /* Heading color */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.about-section p {
+    font-size: 18px; /* Adjust paragraph font size */
+    color: #dee2e6; /* Paragraph text color */
+    margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+
+.image-container {
+    margin-top: 30px; /* Adjust margin as needed */
+
 }
 
 .about-img {
-    max-width: 200px; /* Adjust the maximum width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Crop the image to cover the container */
 }
 
 /* Contact Section */
-.contact-section {
-    padding: 50px 0;
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    margin-top: 20px; /* Add some top margin */
+
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+/* Style the individual icons */
+.social-icons a {
+    margin: 0 10px; /* Add spacing between icons */
+    color: #dee2e6; /* Set icon color */
+    font-size: 28px; /* Set icon size */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+
+/* Hover effect on icons */
+.social-icons a:hover .bi-facebook {
+    color: #3b5998; /* Facebook color on hover */
+}
+
+.social-icons a:hover .bi-instagram {
+    color: #e4405f; /* Instagram color on hover */
+}
+
+.social-icons a:hover .bi-twitter {
+    color: #1da1f2; /* Twitter color on hover */
+}
+
+.social-icons a:hover .bi-youtube {
+    color: #ff0000; /* YouTube color on hover */
 }
