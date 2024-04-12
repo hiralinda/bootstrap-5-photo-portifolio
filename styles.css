@@ -1,11 +1,6 @@
-body {
-    background-color: #6c757d; /* galery and contact me background*/
-    color: #dee2e6; /* galery and contact me text*/
-}
-
 .navbar {
     background-color: #495057;
-    color:#dee2e6;
+    color: #dee2e6;
 }
 
 .navbar-brand {
@@ -20,12 +15,12 @@ body {
 
 .navbar-nav .nav-link {
     font-weight: bold;
-    color: #dee2e6; 
+    color: #dee2e6;
 }
 
 .navbar-brand:hover {
     cursor: pointer;
-    color: #dee2e6; 
+    color: #dee2e6;
 }
 
 .handlee-regular {
@@ -33,11 +28,11 @@ body {
     font-weight: 1000;
     font-style: normal;
     font-size: 48px;
-    color: #212529;  
-  }  
+    color: #495057;
+}
 
 .main-pic {
-    background-image: url('https://images.unsplash.com/photo-1712081024194-bd8d6af8fd68?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    background-image: url("https://images.unsplash.com/photo-1712081024194-bd8d6af8fd68?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -46,91 +41,88 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 .main-pic:before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 30%; 
+    top: 30%;
     left: 10%;
-    width: 80%; 
-    height: 40%; 
-    background-color: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(10px); 
-    border-radius: 0px; 
+    width: 80%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 0px;
     z-index: 1;
 }
 
 .container {
     position: relative;
     z-index: 2;
-    color: black; 
     text-align: center;
 }
 
+#gallery {
+    background-color: #adb5bd;
+  }
+
 .image-gallery {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;  
+    margin-top: 15px;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
     align-items: center;
     gap: 10px;
     list-style: none;
-  }
-  
-  .image-gallery > li {
+}
+
+.image-gallery > li {
     height: 300px;
     cursor: pointer;
     position: relative;
-  }
-  
-  .image-gallery li img {
+}
+
+.image-gallery li img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     vertical-align: middle;
     border-radius: 5px;
-  }
+}
 
-  
-  /* Style the modal */
-  .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1000; /* Sit on top */
-      padding-top: 20px; /* Location of the box */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      --bs-modal-bg: black;
-      background-color: black; /* Black w/ opacity */
-    }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    --bs-modal-bg: black;
+    background-color: black;
+}
 
-/* Modal Content (image) */
 .modal-content {
-    max-width: 100%; /* Limit the maximum width of the modal content */
-    max-height: 100%; /* Limit the maximum height of the modal content */
+    max-width: 100%;
+    max-height: 100%;
     position: relative;
     margin: auto;
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-  }
+    justify-content: center;
+    align-items: center;
+}
 
-  /* Modal Image */
 .modal-img {
-    max-width: 800px; /* Adjust this value for desired width */
-    max-height: 650px; /* Ensure the image does not exceed the height of the modal */
+    max-width: 800px;
+    max-height: 650px;
     display: block;
     margin: auto;
     object-fit: contain;
-  }
+}
 
-/* Close button */
 .close {
     position: absolute;
     top: 15px;
@@ -149,7 +141,8 @@ body {
     cursor: pointer;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -161,84 +154,80 @@ body {
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-  }
-  
-  .prev {
+}
+
+.prev {
     left: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  .next {
+}
+
+.next {
     right: 0;
     border-radius: 3px 3px 3px 3px;
-  }
+}
 
-
-  .about-section {
-    background-color: #495057; /* Light gray background */
-    padding: 50px 0; /* Adjust padding as needed */
-    text-align: center; /* Center-align the content */
+.about-section {
+    background-color: #495057;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .about-section .container {
-    max-width: 800px; /* Set maximum width for content */
-    margin: 0 auto; /* Center the container */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-section h2 {
-    font-size: 36px; /* Adjust heading font size */
-    color: #dee2e6; /* Heading color */
-    margin-bottom: 20px; /* Adjust margin as needed */
+    font-size: 36px;
+    color: #dee2e6;
+    margin-bottom: 20px;
 }
 
 .about-section p {
-    font-size: 18px; /* Adjust paragraph font size */
-    color: #dee2e6; /* Paragraph text color */
-    margin-bottom: 30px; /* Adjust margin as needed */
+    font-size: 18px;
+    color: #dee2e6;
+    margin-bottom: 30px;
 }
 
-
 .image-container {
-    margin-top: 30px; /* Adjust margin as needed */
-
+    margin-top: 30px;
 }
 
 .about-img {
-    width: 100%; /* Ensure the image fills the container */
-    height: 100%; /* Ensure the image fills the container */
-    object-fit: cover; /* Crop the image to cover the container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Contact Section */
+#contact {
+    background-color: #adb5bd;
+}
+
 .social-icons {
     display: flex;
-    justify-content: center; /* Center the icons horizontally */
-    margin-top: 20px; /* Add some top margin */
-
+    justify-content: center;
+    margin-top: 20px;
 }
 
-/* Style the individual icons */
 .social-icons a {
-    margin: 0 10px; /* Add spacing between icons */
-    color: #dee2e6; /* Set icon color */
-    font-size: 28px; /* Set icon size */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    margin: 0 10px;
+    color: #dee2e6;
+    font-size: 28px;
+    transition: color 0.3s ease;
 }
 
-
-/* Hover effect on icons */
 .social-icons a:hover .bi-facebook {
-    color: #3b5998; /* Facebook color on hover */
+    color: #3b5998;
 }
 
 .social-icons a:hover .bi-instagram {
-    color: #e4405f; /* Instagram color on hover */
+    color: #e4405f;
 }
 
 .social-icons a:hover .bi-twitter {
-    color: #1da1f2; /* Twitter color on hover */
+    color: #1da1f2;
 }
 
 .social-icons a:hover .bi-youtube {
-    color: #ff0000; /* YouTube color on hover */
+    color: #ff0000;
 }
