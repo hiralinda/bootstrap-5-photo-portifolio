@@ -1,6 +1,6 @@
 # Bootstrap 5 Photography Portfolio
 
-A responsive photography portfolio website showcasing a gallery of images with a clean, modern design.
+This is my personal photography portfolio website, showcasing a collection of my own photographs in a responsive, modern design. The website features a gallery of images I've captured, providing visitors with an insight into my photographic style and subjects.
 
 ## Live Site
 
